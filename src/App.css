@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+    color: honeydew;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(59, 55, 55);
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "sidebar main";
+    width: 100vw;
+    height: 100vh;
+}
+#main {
+    grid-area: main;
+}
+#new-message {
+    /*position: fixed;
+    display: inline;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    margin-left: 2px;
+    border-top: 1px solid #f6f2f2;
+    line-height: 60px;*/
+    
+    /*flex: 0 0 auto;*/
+    position: fixed;
+    display: inline-flex;
+    flex: 0 0 auto;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+    height: 60px;
+    background: #40434e;
+    border-top: 1px solid #2671ff;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+}
+#messages-list {
+    padding: 5px 0 0 5px;
+}
+#sidebar {
+    grid-area: sidebar;
+    padding: 5px 0 0 5px;
+    border-right: 1px solid #f6f5f5;
+    height: 100%;
+}
+
+#input-box {
+  height: 59px;
+    line-height: 60px;
+    outline: 0 none;
+    border: none;
+    width: calc(100% - 60px);
+    color: white;
+    text-indent: 10px;
+    font-size: 12pt;
+    padding: 0;
+    background: #40434e;
+}
+
+#send-button {
+  float: right;
+    outline: 0 none;
+    border: none;
+    background: rgba(255,255,255,.25);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 2px 0 0 0;
+    margin: 10px;
+    transition: all 0.15s ease-in-out;
+  
+}
+
+/*input-box:hover, send-button:hover {
+  background-color: cornsilk;
+  
+  float: right;
+  
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif
+}*/
+
+
+#heading{
+  text-align: center ;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+
+.bubble {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 0.7em;
+  background-color: rgb(76, 76, 102);
+  padding: 8px 13px 9px 13px;
+  border-radius: 20px;
+  
+  
+}
+
+
+.sender{
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+
+.contact-name{
+  font-size: 16px;
+}
+
+
+.btn-group.contactId{
+  display: block;
+  
+  
+}
+
+
+.contactId{
+  
+  text-align: left;
+  padding: 3px 3px 3px 3px;
+  
+  background-color: cornflowerblue;
+  width: 200px;
+  display: block;
+  cursor: pointer;
+  
+}
